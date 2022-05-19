@@ -1,0 +1,11 @@
+Using Nessus Essentials to scan local VMs hosted on VMWare Workstation in order run credentialed scans to discover vulnerabilities, remediate some of the vulnerabilities,
+then perform a rescan to verify remediation.
+
+The following file contains the steps i followed throughout this project
+
+1. Downloading Vmware workstation player16, windows 10 iso, nessus essentials and installing everything.
+2. Setting up the virtual machine running windows 10. Set the network connection to bridged and make sure to select the adapter that is connected to the local network.
+3. Start the windows 10 VM and set it up. Ping the VM from your host system and make sure it replies. If not then disable all firewalls from the VM. 
+4. After installing Nessus it will automatically open a browser window in which its GUI will run (it is a webapp). (https://localhost:8834/#/). Login using the credentials
+   provided during installation. 
+5. Perform a Basic Network Scan and provide the IP of the VM. 
