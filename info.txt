@@ -9,4 +9,13 @@ The following file contains the steps i followed throughout this project
 4. After installing Nessus it will automatically open a browser window in which its GUI will run (it is a webapp). (https://localhost:8834/#/). Login using the credentials
    provided during installation. 
 5. Perform a Basic Network Scan and provide the IP of the VM. (https://github.com/Mohamk1234/Nessus/blob/main/initialscan.pdf)
+6. Go the the VM and enable remote registry so that the scanner can perform credentailed scan against it.
+7. Turn on file and printer sharing and network discovery.
+8. Change user account control settings, and modify it to never notify when apps try to make any changes.
+9. Go to edit registry and create a new dword called LocalAccountTokenFilterPolicy and change its value to 1.
+10. Restart the VM.
+11. Go the the Nessus portal and reconfigure the scan. Add windoes credentials for the VM, save and run the scan again. (https://github.com/Mohamk1234/Nessus/blob/main/secondscan.pdf)
+
+
+
 
