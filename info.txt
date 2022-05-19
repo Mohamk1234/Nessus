@@ -15,7 +15,10 @@ The following file contains the steps i followed throughout this project
 9. Go to edit registry and create a new dword called LocalAccountTokenFilterPolicy and change its value to 1.
 10. Restart the VM.
 11. Go the the Nessus portal and reconfigure the scan. Add windoes credentials for the VM, save and run the scan again. (https://github.com/Mohamk1234/Nessus/blob/main/secondscan.pdf)
-
+12. Install a deprecated version of firefox on the VM (3.6.12)
+13. Run the scan again. The amount of vulnerabilities will be high in this scan.
+14. For vulnerability remediation, uninstall firefox, update windows to the latest version, also do the optional updates and scan again.
+15. 
 
 
 
